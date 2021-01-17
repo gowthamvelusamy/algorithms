@@ -3,7 +3,7 @@ package com.gv.ssj.search;
 public class BinarySearchRecursive {
 
 
-    private boolean binarySearch(int[] array, int target, int left, int right) {
+    public boolean binarySearch(int[] array, int target, int left, int right) {
 
         if (left > right)
             return false;
@@ -20,4 +20,5 @@ public class BinarySearchRecursive {
             return binarySearch(array, target, left, mid - 1);
 
     }
+
 }
